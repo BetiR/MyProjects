@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Academies</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+    <nav class="container navbar navbar-expand-lg mt-2">
+        <!-- Brand -->
+        <a class="navbar-brand" href="HomePage.html"><img class="media-object ml-3 my-3"
+                src="./assets/images/brainster_space_logo.svg" alt="..." width="50"></a>
+
+        <button type="button" class="btn kopce-nav shadow ml-auto d-none d-md-block d-lg-none py-2" data-toggle="modal"
+            data-target="#myModal">+
+            ПРИКЛУЧИ
+            СЕ</button>
+        <!-- ----------Modal Form ------------ -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title"><b>Приклучи се</b></h4>
+                        <button type="button" class="close" data-dismiss="modal"><i
+                                class="fas fa-times-circle"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/action_page.php" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="uname">Име и презиме (задолжително)</label>
+                                <input type="text" class="form-control" id="uname" placeholder="Внесете Име и Презиме"
+                                    name="uname" required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback" style="color: crimson;"><i>Внесете Име и Презиме</i></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="uname">Име на компанија (незадолжително)</label>
+                                <input type="text" class="form-control" id="uname"
+                                    placeholder="Внесете Име на Вашата Компанија" name="uname">
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNo">Телефонски број (задолжително)</label>
+                                <input type="text" class="form-control" id="phoneNo" placeholder="Внесете Име и Презиме"
+                                    name="uname" required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback" style="color: crimson;"><i>Внесете Телефонски број</i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Предлог за соработка (незадолжително)</label><span
+                                    class="float-right mt-2 mr-2 f-10"><i>300</i></span>
+                                <textarea class="form-control" rows="3" id="comment"
+                                    placeholder="Во 300 карактери, опишете зошто сакате да соработуваме"></textarea>
+                            </div>
+                            <button type="submit" class="btn kopce submit-form float-right ml-2"><i
+                                    class="fas fa-arrow-right"></i>
+                                Испрати
+                                форма</button>
+                            <button type="button" class="btn kopce-inv float-right"
+                                data-dismiss="modal">Исклучи</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------Modal Form 2------------ -->
+        <div class="modal">
+            <div id="myModal2" class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title"><b>Приклучи се</b></h4>
+                        <button type="button" class="close" data-dismiss="modal"><i
+                                class="fas fa-times-circle"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/action_page.php" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="uname">Име и презиме (задолжително)</label>
+                                <input type="text" class="form-control" id="uname" placeholder="Внесете Име и Презиме"
+                                    name="uname" required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback" style="color: crimson;"><i>Внесете Име и
+                                        Презиме</i></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="uname">Име на компанија (незадолжително)</label>
+                                <input type="text" class="form-control" id="uname"
+                                    placeholder="Внесете Име на Вашата Компанија" name="uname">
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNo">Телефонски број (задолжително)</label>
+                                <input type="text" class="form-control" id="phoneNo" placeholder="Внесете Име и Презиме"
+                                    name="uname" required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback" style="color: crimson;"><i>Внесете Телефонски
+                                        број</i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="uname">e-mail (задолжително)</label>
+                                <input type="email" class="form-control" id="email" placeholder="Внесете Име и Презиме"
+                                    name="e-mail" required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback" style="color: crimson;"><i>Внесете e-mail адреса
+                                        на вашата компанија</i></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Потреби на компанијата (незадолжително)</label>
+                                <textarea class="form-control" rows="3" id="comment"
+                                    placeholder="Наведете кои се потребите на вашата компанија"></textarea>
+                            </div>
+                            <button type="submit" class="btn kopce submit-form float-right ml-2"><i
+                                    class="fas fa-arrow-right"></i>
+                                Испрати
+                                форма</button>
+                            <button type="button" class="btn kopce-inv float-right"
+                                data-dismiss="modal">Исклучи</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Toggler/collapsible Button -->
+        <button class="navbar-toggler shadow mr-3" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <i class="fas fa-bars" style="color:#FCD232;"></i>
+        </button>
+        <!-- Navbar links -->
+        <div id="collapsibleNavbar" class="collapse navbar-collapse nav-black mt-3">
+            <ul class="navbar-nav">
+                <li class="nav-item mx-auto py-3">
+                    <a class="nav-link" href="Space Blog.html">SPACE BLOG</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="nav-item mx-auto py-3">
+                    <a class="nav-link" href="Calendar.html">НАСТАНИ</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="nav-item mx-auto py-3">
+                    <a class="nav-link" href="https://brainster.co/">CO-WORKING</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="nav-item mx-auto py-3">
+                    <a class="nav-link active-link active" href="Academies.html">АКАДЕМИИ</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="nav-item mx-auto py-3">
+                    <a class="nav-link" href="EventSpace.html">ПРОСТОР ЗА НАСТАНИ</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="nav-item mx-auto py-3">
+                    <a class="nav-link" data-toggle="modal" data-target="#myModal2">ПАРТНЕРСТВО</a>
+                    <div class="underline mx-auto"></div>
+                </li>
+                <li class="nav-item mx-auto py-3 d-xl-none d-lg-none d-md-block d-sm-block d-xs-block">
+                    <button type="submit" class="btn kopce-inv" data-toggle="modal" data-target="#myModal">+
+                        ПРИКЛУЧИ СЕ</button>
+                </li>
+            </ul>
+        </div>
+        <ul class="nav navbar-nav d-none d-xl-block d-lg-block d-xs-none d-sm-none d-md-none mr-2">
+            <button type="submit" class="btn kopce-nav shadow" data-toggle="modal" data-target="#myModal">+ ПРИКЛУЧИ
+                СЕ</button>
+        </ul>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 my-auto">
+                <h3><b>Академии</b></h3>
+                <p class="py-3">Нашите академии ќе ти помогнат да ги совладаш најбараните вештини на денешницата
+                    преку интерактивна настава и практична работа на реални проекти.
+                    <br><br>
+                    Инструктори кои се докажани експерти во својата област. Преку нив имаш можност да ги научиш и
+                    предвидиш предизвиците на иднината на работење и да се поврзеш со сегашните и идни врвни
+                    професионалци и компании.
+                    <br><br>
+                    Академиите ќе ти го отворат патот кон кариера каква што посакуваш.
+                </p>
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                <img src="./assets/images/Akademii/nastani.jpg" width="100%" height="100%">
+            </div>
+        </div>
+    </div>
+
+    <div id="colored-cards" class="container my-5">
+        <div class="card-deck">
+            <div class="card col-lg-4 col-md-6 col-sm-12 mr-3 mb-4 text-white">
+                <a class="card-body" style="background-image: linear-gradient(rgba(148, 3, 117, 0.6),rgba(63, 2, 53, 0.6)), url(assets/images/Akademii/edukacija.jpg)" href=https://design.brainster.co/?gclid=CjwKCAjwqdn1BRBREiwAEbZcRzGvEjSf7vevI5WcavHocHEeOCBV6D4-P6leu-X6uaE9IqE_-523ghoC_PkQAvD_BwE"></a>
+                        <div class="card-title pb-5 pt-2">
+                            <h4><b>Академија за графички дизајн</b></h4>
+                        </div>
+                        <div class="card-text py-0 pt-5">
+                            <i class="fas fa-users"></i><span class="pl-2 f-10"><b>Слободни места: 4</b></span><br>
+                            <i class="far fa-calendar-alt"></i><span class="pl-2 f-10"><b> Уписи до
+                                    26.08.2020</b></span>
+                            <br>
+                            <i class="far fa-clock"></i><span class="pl-2 f-10"><b>Стани дизајнер за 7 месеци</b></span>
+                            </li><br>
+                            <i class="far fa-handshake"></i><span class="pl-2 f-10"><b>Партнери за вработување:
+                                    5</b></span><br>
+                        </div>
+                    </div>
+            <div class="card col-lg-4 col-md-6 col-sm-12 text-white mr-3 mb-4">
+                <a class="card-body" style="background-image: linear-gradient(rgba(141, 20, 20, 0.6),rgba(61, 3, 3, 0.6)), url(assets/images/Akademii/edukacija1.jpg)"
+                        href="https://marketpreneurs.brainster.co/?gclid=CjwKCAjwqdn1BRBREiwAEbZcR5-WaqkM47ttS8aq2EVqs_WJMgrJ7x-5dR1hnLX0S2Gt_fwTn1VEtBoCFPsQAvD_BwE"></a>
+                        <div class="card-title pb-5 pt-2">
+                            <h4><b>Академија за дигитален маркетинг</b></h4>
+                        </div>
+                        <div class="card-text py-0 pt-5">
+                            <i class="fas fa-users"></i><span class="pl-2 f-10"><b>Слободни места: 4</b></span><br>
+                            <i class="far fa-calendar-alt"></i><span class="pl-2 f-10"><b> Уписи до
+                                    26.08.2020</b></span>
+                            <br>
+                            <i class="far fa-clock"></i><span class="pl-2 f-10"><b>Стани дизајнер за 7 месеци</b></span>
+                            </li><br>
+                            <i class="far fa-handshake"></i><span class="pl-2 f-10"><b>Партнери за вработување:
+                                    5</b></span><br>
+                        </div>
+                </div>
+            <div class="card col-lg-4 col-md-6 col-sm-12 text-white mr-3 mb-4">
+                <a class="card-body" style="background-image: linear-gradient(rgba(31, 153, 31, 0.6),rgba(9, 51, 2, 0.6)), url(assets/images/Akademii/edukacija2.jpg)" href="http://codepreneurs.co/akademija-za-web-design/"></a>
+                        <div class="card-title pb-5 pt-3">
+                            <h4><b>Академија за Front-end програмирање </b></h4>
+                        </div>
+                        <div class="card-text py-0 pt-5">
+                            <i class="fas fa-users"></i><span class="pl-2 f-10"><b>Слободни места: 4</b></span><br>
+                            <i class="far fa-calendar-alt"></i><span class="pl-2 f-10"><b> Уписи до
+                                    26.08.2020</b></span>
+                            <br>
+                            <i class="far fa-clock"></i><span class="pl-2 f-10"><b>Стани дизајнер за 7 месеци</b></span>
+                            </li><br>
+                            <i class="far fa-handshake"></i><span class="pl-2 f-10"><b>Партнери за вработување:
+                                    5</b></span><br>
+                        </div>
+                </div>
+            <div class="card col-lg-4 col-md-6 col-sm-12 text-white mr-3 mb-4">
+                <a class="card-body" style="background-image: linear-gradient(rgba(31, 153, 31, 0.6),rgba(7, 39, 1, 0.6)), url(assets/images/Akademii/edukacija2.jpg)" href="https://codepreneurs.brainster.co/?gclid=CjwKCAjwqdn1BRBREiwAEbZcR9dd-JuEoczq78QOQP1D-Dcop92tsJkftVqB4HybfxPFCh_lITm8uhoCv6oQAvD_BwE"></a>
+
+                    <div class="card-title pb-5 pt-3">
+                            <h3><b>Академија за Full-stack програмирање</b></h3>
+                    </div>
+                    <div class="card-text py-0 pt-5">
+                        <i class="fas fa-users"></i><span class="pl-2 f-10"><b>Слободни места: 4</b></span><br>
+                        <i class="far fa-calendar-alt"></i><span class="pl-2 f-10"><b> Уписи до 26.08.2020</b></span>
+                        <br>
+                        <i class="far fa-clock"></i><span class="pl-2 f-10"><b>Стани дизајнер за 7 месеци</b></span>
+                        </li><br>
+                        <i class="far fa-handshake"></i><span class="pl-2 f-10"><b>Партнери за вработување:5</b></span><br>
+                    </div>
+            </div>
+            <div class="card col-lg-4 col-md-6 col-sm-12 text-white mr-3 mb-4">
+                <a class="card-body" style="background-image: linear-gradient(rgba(2, 59, 105, 0.6),rgba(0, 10, 19, 0.6)), url(assets/images/Akademii/edukacija.jpg)" href="https://datascience.brainster.co/?gclid=CjwKCAjwqdn1BRBREiwAEbZcR79w_cVZNLDpfEPBmLhQ8MS02uKBnixdpEDK6DUT0w92wUpXygs1UhoC_9MQAvD_BwE"></a>
+                        <div class="card-title pb-5 pt-3">
+                            <h3><b>Академија за Data Science</b></h3>
+                        </div>
+                        <div class="card-text py-0 pt-5">
+                            <i class="fas fa-users"></i><span class="pl-2 f-10"><b>Слободни места: 4</b></span><br>
+                            <i class="far fa-calendar-alt"></i><span class="pl-2 f-10"><b> Уписи до
+                                    26.08.2020</b></span>
+                            <br>
+                            <i class="far fa-clock"></i><span class="pl-2 f-10"><b>Стани дизајнер за 7 месеци</b></span>
+                            </li><br>
+                            <i class="far fa-handshake"></i><span class="pl-2 f-10"><b>Партнери за вработување:
+                                    5</b></span><br>
+                        </div>
+            </div>
+            <div class="card col-lg-4 col-md-6 col-sm-12 text-white mr-3 mb-4">
+                <a class="card-body" style="background-image: linear-gradient(rgba(53, 109, 84, 0.6),rgba(2, 47, 27, 0.6)), url(assets/images/Akademii/edukacija1.jpg)" href="https://design.brainster.co/?gclid=CjwKCAjwqdn1BRBREiwAEbZcR1jpj1GGEuZx1_vlGuk-mROHlsqxsoLfxYqc3tB2F4ump1xhLMZnGBoCmmYQAvD_BwE"></a>
+                       <div class="card-title pb-5 pt-3">
+                            <h3><b>Академија за графички дизајн</b></h3>
+                        </div>
+                        <div class="card-text py-0 pt-5">
+                            <i class="fas fa-users"></i><span class="pl-2 f-10"><b>Слободни места: 4</b></span><br>
+                            <i class="far fa-calendar-alt"></i><span class="pl-2 f-10"><b> Уписи до
+                                    26.08.2020</b></span>
+                            <br>
+                            <i class="far fa-clock"></i><span class="pl-2 f-10"><b>Стани дизајнер за 7 месеци</b></span>
+                            </li><br>
+                            <i class="far fa-handshake"></i><span class="pl-2 f-10"><b>Партнери за вработување:
+                                    5</b></span><br>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <footer>
+        <div class="container">
+
+            <div class="row">
+                <a class="logo d-xs-block d-md-none pb-5 pl-2 pt-4" href="HomePage.html">
+                    <img class="media-object " src="./assets/images/brainster_space_logo.svg" width="70px">
+                </a>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 links pb-5">
+                    <b>Корисни линкови</b>
+                    <li>
+                        <div class="popup f-10" onclick="popUpContactFunc()">Контакт
+                            <span class="popuptext myPopup2">Ања Макеска <br> anja@brainster.co <br> +389 (0)70 233
+                                414</span>
+                        </div>
+                    </li>
+                    <li><a href="https://www.wearelaika.com/">Отворени позиции</a></li>
+                    <li><a href="https://medium.com/wearelaika/brainster-space-the-
+    New-home-of-the-local-tech-community-
+    In-skopje-ffe97b564152">Галерија</a></li>
+                    <li><a href="Calendar.html">Календар</a></li>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 social pb-5">
+                    <p><b>Социјални мрежи</b></p>
+                    <div class=contact>
+                        <a href="facebook.com"><span style="padding-right: 8%; color: #4267B2;">
+                                <i class="fab fa-facebook fa-2x"></i>
+                            </span></a>
+                        <a href="linkedin.com"><span style="padding-right: 8%; color: #006097;">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </span></a>
+                        <a href="instagram.com"><span style="color: #CC0099;">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </span></a>
+                    </div>
+                </div>
+                <a class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 logo pt-3" href="HomePage.html">
+                    <img class="float-right d-none d-xl-block d-lg-block d-xs-none d-sm-none d-md-block"
+                        src="./assets/images/brainster_space_logo.svg" width="70px">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container-fluid text-center copyright pt-4 pb-2">
+        <p><b>COPYRIGHT@BrainsterSpace. All Rights Reserved</b></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+        <script src="assets/js/general.js"></script>
+
+</body>
+
+</html>

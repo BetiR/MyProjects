@@ -1,0 +1,590 @@
+html {
+    font-family:Ubuntu;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover, a:focus {
+    color: inherit;
+}
+
+.hide {
+    display: none;
+}
+
+.navbar {
+    background-color: white !important;
+    border-color: white;
+    font-weight: bold;
+    padding: 0em;
+}
+.nav-link{
+    padding: 0.3em;
+    color: black;
+}
+
+.active {
+    color: #FCD232;
+}
+
+.navbar-collapse ul li .underline {
+	height: 3px;
+	background-color: transparent;
+	width: 0%;
+	transition: width 0.2s, background-color 0.5s;
+    margin: 0 auto;
+    padding: -5px;
+}
+
+.navbar-collapse>ul>li .active-link .underline {
+    background-color: #FCD232;
+    width: 80%;
+}
+
+.navbar-collapse ul li:hover .underline {
+	background-color: #FCD232;
+	width: 90%;
+    margin-left: 1.5%;
+}
+
+.navbar-collapse ul li:active .underline {
+    background-color: #FCD232;
+    transition: none;
+}
+
+#collapsibleNavbar>li>a {
+   color: black !important;
+   font-size: 12pt !important;
+}
+
+.navbar-toggler {
+    background-color:black !important;
+    margin-left: 4%;
+}
+
+.navbar-toggler-icon {
+    color: #FCD232 !important;
+}
+
+#collapsibleSubNavbar ul li .underline {
+	height: 3px;
+	background-color: transparent;
+	width: 0%;
+	transition: width 0.2s, background-color 0.5s;
+    margin: 0% auto !important;
+}
+
+#collapsibleSubNavbar>ul>li .active-link .underline {
+  	background-color: rgba(0, 0, 0, 0.527);
+    width: 85%;
+    margin-left: 4.5%;
+}
+
+#collapsibleSubNavbar ul li:hover .underline {
+	background-color: black !important;
+    width: 85%;
+    margin-left: 1.5%;
+}
+
+#collapsibleSubNavbar ul li:active a {
+    color: rgb(0, 0, 0) !important;
+}
+
+#collapsibleSubNavbar ul li:active .underline {
+    background-color: rgb(0, 0, 0);
+    transition: none;
+}
+#collapsibleSubNavbar ul{
+background-color: rgba(93, 92, 92, 0.109);
+}
+#collapsibleSubNavbar{
+font-size: 10pt;
+}
+.nav-link{
+    cursor: pointer;
+}
+
+#collapsibleSubNavbar > ul > li:nth-child(1) > a{
+    cursor: unset;
+}
+
+#collapsibleSubNavbar{
+    background-color: rgba(128, 128, 128, 0.198) !important;
+    font-size: 10pt !important;
+    margin-bottom: 0 !important;
+}
+
+
+/* --------------------------------- */
+
+.kopce-nav {
+    color: #FCD232;
+    background-color:black;
+    border-color:black;
+    font-size: smaller;
+    font-weight: bold;    
+}
+
+.kopce-nav:hover {
+    color: black;
+    background-color:#FCD232;
+    border-color:#FCD232;
+}   
+
+.kopce {
+    color: #FCD232;
+    background-color:black;
+    border-color:black;
+    font-size: smaller;
+    font-weight: bold;    
+}
+.kopce:hover {
+    color: black;
+    background-color:#FCD232;
+    border-color:#FCD232;
+}   
+
+.kopce-inv {
+    color: black;
+    background-color:#FCD232;
+    border-color:#FCD232;
+    font-size: smaller;
+    font-weight: bold;   
+}
+.kopce-inv:hover{
+    color: #FCD232;
+    background-color:black;
+    border-color:black;
+}
+
+.offer .btn {
+    cursor: default;
+  }
+
+#home {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/assets/images/P1UGP3KR2S.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+.card {
+    min-width: 18rem;
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.01); 
+}
+.card a{
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+#bg{
+    padding: 0.9%;
+    margin-bottom: 1%;
+}
+.badge{
+    padding: 2% 3%;
+    border-radius: 15px;
+    background-color: #FCD232;
+    color: black;
+}
+
+.toggle-btns{
+margin-top:-4% !important;
+margin-left:0.4% !important;
+z-index: 99 !important;
+}
+.crosslined {
+    text-decoration:line-through;
+    }
+
+
+/*~~~~~~~~~~~~Academies colored-cards~~~~~~~~~~~~~~*/
+#colored-cards .card {
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    min-width: 18rem;
+}
+
+#colored-cards .card-body {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#colored-cards .card-body:hover {
+    transform: scale(1.4);
+}
+
+#colored-cards .card-title {
+    margin: 5% 10%;
+    z-index: 99;
+}
+
+#colored-cards .card-text {
+    z-index: 99;
+    margin: 5% 10%;
+}
+
+/* ~~~~~~~~~~~~~PopUp~~~~~~~~~~~~~~ */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 230px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.popup:hover {
+    font-weight: bold;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -50px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/* ^^^^^^^^^^^^PopUp^^^^^^^^^^^^^^ */
+
+footer {
+    background-color: rgba(211, 211, 211, 0.26);
+    border-top: rgba(128, 128, 128, 0.424) solid 4px;
+    padding-top: 4%;
+}
+
+footer li {    
+    list-style-type: none; 
+    padding-top: 3%;
+    }
+
+footer li a{
+    color: black;
+    font-size: smaller;
+}
+
+footer li a:hover{
+    color: black;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.copyright {
+    background-color: rgba(128, 128, 128, 0.178);
+    font-size: smaller;
+    }
+
+.f-10 {
+    font-size: 10pt;
+}
+
+.f-16 {
+    font-size: 16pt;
+    font-weight: 400;
+}
+.offer .btn{
+    background-color: black;
+}
+.offer i {
+    color:#FCD232 
+}
+
+.btns {
+    margin-left: -1.5%;
+}
+
+/*___________SLIDER_______________*/
+.mySlides{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    align-self: center;  
+    
+}
+
+.mySlides button{
+    background-color: white;
+    border: none;
+}
+
+.strelki {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+}
+
+.slider-text{
+padding-left: 0 !important;
+}
+
+.prev, .next {
+color: white;
+  cursor: pointer;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  font-size: 30px;
+  color:#FCD232;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 7s;
+  animation-name: fade;
+  animation-duration: 7s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.5}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.5}
+  to {opacity: 1}
+}
+
+/*_____________CALENDAR____________ */
+
+    .calendar-controls {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .calendar-header,
+    .calendar-week {
+        display: flex;
+    }
+
+    .header-cell {
+        display: flex;
+        width: 14.285%;
+        height: 50px;
+        justify-content: flex-end;
+        text-transform: uppercase;
+        font-weight: bold;
+        align-items: center;
+        padding: 6px;
+    }
+
+    .day-cell {
+        display: flex;
+        width: 14.285%;
+        height: 80px;
+        background-color: #e0e0e0;
+        border: 4px solid white;
+        padding: 6px;
+        position: relative;
+    }
+
+    .day-cell span {
+        position: absolute;
+        bottom: 6px;
+        right: 6px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .empty-cell {
+        display: flex;
+        width: 14.285%;
+        height: 80px;
+        background-color: none;
+        border: 4px solid white;
+        padding: 6px;
+        /* padding-ot ni faleshe sto beshe izmesten gridot za denovite :) */
+    }
+
+    .today {
+        background-color: orange;
+        color: white;
+    }
+
+    .event-day {
+        font-size: .7em;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .event {
+        padding: 0 3px 3px;
+        margin-bottom: 4px;
+    }
+
+    footer a{
+        text-decoration: none !important;
+    }
+
+/*_________________________________*/
+
+
+/* --------------------------------------- */
+@media only screen and (max-width:770px) {
+
+#collapsibleSubNavbar{
+ background-color:gray !important;
+ margin-left: 0% !important;
+}
+
+#collapsibleSubNavbar .nav-link{
+    color:black !important;
+
+}
+.navbar-nav{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    background-color: black;
+    color:white;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.toggle-btns{
+margin-top:-78% !important;
+margin-left:1% !important;
+z-index: 99 !important;
+}
+
+.edu {
+    margin-top: 20%;
+}
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  padding: 5px 0;
+  left: 50%;
+  margin-left: -30px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  top: 100%;
+  left: 0%;
+  margin-left: 15px;
+}
+
+#collapsibleNavbar{
+    background-color:black !important;
+    margin:0% !important;
+}
+#collapsibleNavbar .nav-link{
+    color: white;
+}
+#collapsibleNavbar .nav-link:hover{
+    color: white !important;
+}
+}
+
+/* ______________________________________ */
+
+
+@media only screen and (max-width:425px) {
+
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  padding: 5px 0;
+  left: 50%;
+  margin-left: -30px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  top: 100%;
+  left: 0%;
+  margin-left: 15px;
+}
+
+.numbertext {
+  font-size: 35px;
+  color:#FCD232;
+  margin-left: 27% !important;
+  margin-top: -10% !important;
+}
+
+.prev, .next {
+margin-left: 0% !important;
+margin-right: 0% !important;
+}
+
+#collapsibleNavbar{
+    background-color:black !important;
+    margin:0% !important;
+}
+
+#collapsibleNavbar .nav-link{
+    color: white;
+}
+#collapsibleNavbar .nav-link:hover{
+    color: white !important;
+}
+
+}
+
+@media only screen and (max-width:425px) {
+#subNavToggler{
+    margin-left: 38% !important;
+    margin-right: -12%;
+}
+}
+
+@media only screen and (max-width:320px) {
+#subNavToggler{
+    margin-right: 0%;
+}
+}

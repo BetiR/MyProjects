@@ -1,0 +1,74 @@
+.calendar-header,
+        .calendar-week {
+            display: flex;
+        }
+
+        .header-cell {
+            display: flex;
+            width: 14.285%;
+            height: 50px;
+            justify-content: flex-end;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 14pt;
+            align-items: center;
+            padding-right: 18px;
+            
+        }
+
+        .day-cell {
+            display: flex;
+            width: 14.285%;
+            height: 100px;
+            background-color: #e0e0e0b4;
+            border: 6px solid white;
+            border-radius: 20px;
+            padding: 5px;
+            position: relative;
+        }
+
+        .day-cell span {
+            position: absolute;
+            bottom: 6px;
+            right: 6px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .empty-cell {
+            display: flex;
+            width: 14.285%;
+            height: 100px;
+            background-color: none;
+            border: 6px solid white;
+            padding: 5px;
+        }
+
+        .today {
+            background-color: #FCD232;
+            color: white;
+        }
+
+        .event-day {
+            font-size: .7em;
+            flex-direction: column;
+            overflow: auto;
+        }
+
+        .event {
+            padding: 0 3px 3px;
+            margin-bottom: 4px;
+        }
+
+        #monthAndYear{
+            font-size: 18pt;
+            font-weight: bold;
+        }
+
+        #sledno{
+            background-color: black;
+            color:white;
+        }
+card{
+    line-height: 1%;
+}

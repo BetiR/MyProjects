@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>EventSpace</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flexmasonry/dist/flexmasonry.css">
+    <script src="https://unpkg.com/flexmasonry/dist/flexmasonry.js"></script>
+</head>
+
+<body>
+    <nav class= "container navbar navbar-expand-lg mt-2">
+        <!-- Brand -->
+        <a class="navbar-brand" href="HomePage.html"><img class="media-object ml-3 my-3"
+                src="./assets/images/brainster_space_logo.svg" alt="..." width="50"></a>
+
+        <button type="button" class="btn kopce-nav shadow ml-auto d-none d-md-block d-lg-none py-2" data-toggle="modal"
+            data-target="#myModal">+
+            ПРИКЛУЧИ
+            СЕ</button>
+        <!-- ----------Modal Form ------------ -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title"><b>Приклучи се</b></h4>
+                        <button type="button" class="close" data-dismiss="modal"><i
+                                class="fas fa-times-circle"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/action_page.php" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="uname">Име и презиме (задолжително)</label>
+                                <input type="text" class="form-control" id="uname" placeholder="Внесете Име и Презиме"
+                                    name="uname" required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback" style="color: crimson;"><i>Внесете Име и Презиме</i></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="uname">Име на компанија (незадолжително)</label>
+                                <input type="text" class="form-control" id="uname"
+                                    placeholder="Внесете Име на Вашата Компанија" name="uname">
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNo">Телефонски број (задолжително)</label>
+                                <input type="text" class="form-control" id="phoneNo" placeholder="Внесете Име и Презиме"
+                                    name="uname" required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback" style="color: crimson;"><i>Внесете Телефонски број</i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Предлог за соработка (незадолжително)</label><span
+                                    class="float-right mt-2 mr-2 f-10"><i>300</i></span>
+                                <textarea class="form-control" rows="3" id="comment"
+                                    placeholder="Во 300 карактери, опишете зошто сакате да соработуваме"></textarea>
+                            </div>
+                            <button type="submit" class="btn kopce submit-form float-right ml-2"><i
+                                    class="fas fa-arrow-right"></i>
+                                Испрати
+                                форма</button>
+                            <button type="button" class="btn kopce-inv float-right"
+                                data-dismiss="modal">Исклучи</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------Modal Form 2------------ -->
+        <div class="modal" id="myModal2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title"><b>Приклучи се</b></h4>
+                        <button type="button" class="close" data-dismiss="modal"><i
+                                class="fas fa-times-circle"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/action_page.php" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="uname">Име и презиме (задолжително)</label>
+                                <input type="text" class="form-control" id="uname" placeholder="Внесете Име и Презиме"
+                                    name="uname" required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback" style="color: crimson;"><i>Внесете Име и
+                                        Презиме</i></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="uname">Име на компанија (незадолжително)</label>
+                                <input type="text" class="form-control" id="uname"
+                                    placeholder="Внесете Име на Вашата Компанија" name="uname">
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNo">Телефонски број (задолжително)</label>
+                                <input type="text" class="form-control" id="phoneNo" placeholder="Внесете Име и Презиме"
+                                    name="uname" required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback" style="color: crimson;"><i>Внесете Телефонски
+                                        број</i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="uname">e-mail (задолжително)</label>
+                                <input type="email" class="form-control" id="email" placeholder="Внесете Име и Презиме"
+                                    name="e-mail" required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback" style="color: crimson;"><i>Внесете e-mail адреса
+                                        на вашата компанија</i></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Потреби на компанијата (незадолжително)</label>
+                                <textarea class="form-control" rows="3" id="comment"
+                                    placeholder="Наведете кои се потребите на вашата компанија"></textarea>
+                            </div>
+                            <button type="submit" class="btn kopce submit-form float-right ml-2"><i
+                                    class="fas fa-arrow-right"></i>
+                                Испрати
+                                форма</button>
+                            <button type="button" class="btn kopce-inv float-right"
+                                data-dismiss="modal">Исклучи</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Toggler/collapsible Button -->
+        <button class="navbar-toggler shadow mr-3" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <i class="fas fa-bars" style="color:#FCD232;"></i>
+        </button>
+        <!-- Navbar links -->
+        <div id="collapsibleNavbar" class="collapse navbar-collapse nav-black mt-3">
+            <ul class="navbar-nav">
+                <li class="nav-item mx-auto py-3">
+                    <a class="nav-link" href="Space Blog.html">SPACE BLOG</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="nav-item mx-auto py-3">
+                    <a class="nav-link" href="Calendar.html">НАСТАНИ</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="nav-item mx-auto py-3">
+                    <a class="nav-link" href="https://brainster.co/">CO-WORKING</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="nav-item mx-auto py-3">
+                    <a class="nav-link active-link" href="Academies.html">АКАДЕМИИ</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="nav-item mx-auto py-3">
+                    <a class="nav-link active" href="EventSpace.html">ПРОСТОР ЗА НАСТАНИ</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="nav-item mx-auto py-3">
+                    <a class="nav-link" data-toggle="modal" data-target="#myModal2">ПАРТНЕРСТВО</a>
+                    <div class="underline mx-auto"></div>
+                </li>
+                <li class="nav-item mx-auto py-3 d-xl-none d-lg-none d-md-block d-sm-block d-xs-block">
+                    <button type="submit" class="btn kopce-inv" data-toggle="modal" data-target="#myModal">+
+                        ПРИКЛУЧИ СЕ</button>
+                </li>
+            </ul>
+        </div>
+        <ul class="nav navbar-nav d-none d-xl-block d-lg-block d-xs-none d-sm-none d-md-none mr-2">
+            <button type="submit" class="btn kopce-nav shadow" data-toggle="modal" data-target="#myModal">+ ПРИКЛУЧИ
+                СЕ</button>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 my-auto">
+                <h3><b>Простор за Настани</b></h3>
+                <p class="mt-3 f-10">Нашиот простор се прилагодува според потребите на вашиот настан. Седум различни
+                    простории и Space Kitchen.
+                </p>
+                <p class="f-10">Наменски создадени да се прилагодуваат и менуваат во согласност со типот на настан
+                    кој го
+                    организирате.
+                </p>
+                <p class="f-10">Организираме конференции до 150 учесници и обуки и предавања за групи од 20
+                    учесници. Контактирајте
+                    не за да ви хостираме одличен настан.
+                </p>
+                <a class="btn kopce shadow px-4 mt-3" href="#anja" role="button">+ БУКИРАЈ
+                    НЕ</a>
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 pt-5 my-auto">
+                <img src="./assets/images/Za_Nas/prostor za nastani.jpg" width="100%">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 my-auto text-justify">
+                <h1><b>Нашите простории</b></h1>
+                <p class="mt-3 f-10">Комплетно адаптибилни. Една сала за 150 учесници или три помали сали за групи од по
+                    50 учесника. Училници за 25 до 40 учесника. Избор од две локации.
+                </p>
+                <p class="f-10">Пулт за прием. И најважно место за networking - Brainster Kitchen.
+                </p>
+                <p class="f-10">Како го замислувате вашиот следен настан?
+                </p>
+            </div>
+
+            <div class="container-fluid col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 border-0">
+                        <img class="card-img-top" src="./assets/images/Renderi/2.jpg" alt="Brainster">
+                        <h6 class="card-title py-2">Brainster</h6>
+                    </div>
+                    <div class="col-lg-4 col-md-6 border-0">
+                        <img class="card-img-top" src=".\assets\images\Renderi\C3 EXIBITION_1.jpg"
+                            alt="Конференциска сала">
+                        <h6 class="card-title py-2">Конференциска сала</h6>
+                    </div>
+                    <div class="col-lg-4 col-md-6 border-0">
+                        <img class="card-img-top" src="./assets/images/Renderi/C3 2.jpg" alt="Сала со бина">
+                        <h6 class="card-title py-2">Сала со бина</h6>
+                    </div>
+                    <div class="col-lg-4 col-md-6 border-0 ">
+                        <img class="card-img-top" src="./assets/images/Renderi/C3 1.jpg" alt="Card image cap">
+                        <h6 class="card-title py-2">Адаптибилна училница</h6>
+                    </div>
+                    <div class="col-lg-4 col-md-6 border-0">
+                        <img class="card-img-top" src="./assets/images/Renderi/C2 1.jpg" alt="Card image cap">
+                        <h6 class="card-title py-2">Училница</h6>
+                    </div>
+                    <div class="col-lg-4 col-md-6 border-0">
+                        <img class="card-img-top" src="./assets/images/Renderi/C1 1.jpg" alt="Училница">
+                        <h6 class="card-title py-2">Училница</h6>
+                    </div>
+                    <div class="col-lg-4 col-md-6 border-0">
+                        <img class="card-img-top" src="./assets/images/Renderi/HOL KON SEDENJE.jpg" alt="Сала со бина">
+                        <h6 class="card-title py-2">Хол</h6>
+                    </div>
+                    <div class="col-lg-4 col-md-6 border-0">
+                        <img class="card-img-top" src="./assets/images/Renderi/C1 4.jpg" alt="Канцелариски простор">
+                        <h6 class="card-title py-2">Канцелариски простор</h6>
+                    </div>
+                    <div class="col-lg-4 col-md-6 border-0">
+                        <img class="card-img-top" src="./assets/images/Renderi/KITCHEN_03.jpg" alt="Space Kitchen">
+                        <h6 class="card-title py-2">Space Kitchen</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------ кујна лаптоп ---------->
+    <div class="container mt-5 d-none d-xl-block d-lg-block">
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="pb-2" src="./assets/images/Space_Kitchen_Galerija/IMG_7777.jpg" alt="" width="104%"
+                    height="55%">
+                <div class="row">
+                    <div class="col-lg-6 pt-2">
+                        <img src="./assets/images/Space_Kitchen_Galerija/IMG_7361.jpg" alt="" width="108%"
+                            height="140%">
+                    </div>
+                    <div class="col-lg-6 pt-2">
+                        <img src="./assets/images/Space_Kitchen_Galerija/IMG_7385.jpg" alt="" width="108%"
+                            height="140%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img src="./assets/images/Space_Kitchen_Galerija/IMG_7362.jpg" alt="" width="100%" height="100%">
+            </div>
+            <div class="col-lg-4 my-auto">
+                <h3><b>Space Kitchen</b></h3>
+                <p class="f-10 mt-3">Место каде сите настани започнуваат и завршуваат. Место каде нашиот тим готви и
+                    експериментира. Нашата кујна има само едно правило.</p>
+                <p class="f-10"> Храната мора да биде вегетаријанска. Пијалок, кафе или мезе. Вие одберете вид на
+                    кетеринг ние ќе го обезбедиме.</p>
+            </div>
+        </div>
+    </div>
+    <!------------кујна таблет -------- -->
+    <div class="container mt-5 d-none d-md-block d-lg-none">
+        <div class="my-auto">
+            <h3><b>Space Kitchen</b></h3>
+            <p class="f-10"> Храната мора да биде вегетаријанска. Пијалок, кафе или мезе. Вие одберете вид на
+                кетеринг ние ќе го обезбедиме.</p>
+        </div>
+        <div class="row">
+            <div class='col-md-6'>
+                <img class="mb-4" src="./assets/images/Space_Kitchen_Galerija/IMG_7777.jpg" alt="" width="100%">
+                <img class="mb-4" src="./assets/images/Space_Kitchen_Galerija/IMG_7385.jpg" alt="" width="100%">
+            </div>
+            <div class="col-md-6 pl-2">
+                <img class="mb-4" src="./assets/images/Space_Kitchen_Galerija/IMG_7362a.jpg" alt="" width="100%"
+                    height="45%">
+                <img class="mb-4" src="./assets/images/Space_Kitchen_Galerija/IMG_7361.jpg" alt="" width="98%">
+            </div>
+        </div>
+    </div>
+    <!----------кујна мобилен -------- -->
+    <div class="container mt-5 d-md-none">
+        <div class="my-auto">
+            <h3><b>Space Kitchen</b></h3>
+            <p class="f-10"> Храната мора да биде вегетаријанска. Пијалок, кафе или мезе. Вие одберете вид на
+                кетеринг ние ќе го обезбедиме.</p>
+        </div>
+        <img class="pb-2" src="./assets/images/Space_Kitchen_Galerija/IMG_7777.jpg" alt="" width="100%">
+        <img class="pb-2" src="./assets/images/Space_Kitchen_Galerija/IMG_7385.jpg" alt="" width="100%">
+        <img class="pb-2" src="./assets/images/Space_Kitchen_Galerija/IMG_7362.jpg" alt="" width="100%">
+        <img class="pb-2" src="./assets/images/Space_Kitchen_Galerija/IMG_7361.jpg" alt="" width="100%">
+    </div>
+   
+
+    <div class="container offer mt-5 d-none d-xl-block d-lg-block d-xs-none d-sm-none d-md-block">
+        <h3 class="pt-2"><b>Нудиме</b></h3>
+        <div class="container btns">
+            <button type="button" class="btn btn-dark pr-4 mr-2 my-1 mb-2 f-16"><i class="fas fa-campground pr-2"></i>
+                Простор</button>
+            <button type="button" class="btn btn-dark pr-4 mr-2 my-1 mb-2 f-16"><i
+                    class="fas fa-bread-slice pr-2"></i>Space
+                Kitchen</button>
+            <button type="button" class="btn btn-dark pr-4 mr-2 my-1 mb-2 f-16"><i
+                    class="fas fa-satellite-dish pr-2"></i>
+                Логистика</button>
+            <button type="button" class="btn btn-dark pr-4 mr-2 my-1 mb-2 f-16"><i
+                    class="fas fa-headset pr-2"></i>Техничка
+                Поддршка</button>
+            <button type="button" class="btn btn-dark pr-4 mr-2 my-1 mb-2 f-16"><i
+                    class="fas fa-volume-up pr-2"></i>Звук</button>
+            <button type="button" class="btn btn-dark pr-4 mr-2 my-1 mb-2 f-16"><i
+                    class="far fa-lightbulb pr-2"></i>Светло</button>
+            <button type="button" class="text-left btn btn-dark pr-3 mr-2 my-1 mb-2 f-16"><i
+                    class="fas fa-network-wired pr-2"></i>Помош при
+                Организација</button>
+            <button type="button" class="btn btn-dark pr-4 mr-2 my-1 mb-2 f-16"><i
+                    class="fas fa-camera-retro pr-2"></i>Видео и Фотографија</button>
+            <button type="button" class="text-left btn btn-dark pr-3 mr-2 my-1 py-2 mb-2 f-16"><i
+                    class="fab fa-facebook pr-1"></i>Промоција на Социјални мрежи</button>
+        </div>
+    </div>
+    <div class="container offer mb-3 d-md-none mt-5">
+        <h3 class="pt-4">
+            <h3><b>Нудиме</b></h3>
+            <div class="container btns">
+                <div>
+                    <button type="button" class="btn btn-dark px-3 py-2 mb-2 f-16"><i
+                            class="fas fa-satellite-dish pr-2"></i>
+                        Логистика</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-dark px-3 py-2 mb-2 f-16"><i
+                            class="fas fa-campground pr-2"></i>
+                        Простор</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-dark px-3 py-2 mb-2 f-16"><i
+                            class="fas fa-bread-slice pr-2"></i>Space
+                        Kitchen</button>
+                </div>
+                <div>
+                    <button type="button" class="text-left btn btn-dark px-3 py-2 mb-2 f-16"><i
+                            class="fab fa-facebook pr-1 d-inline-block"></i>
+                        Промоција на Социјални мрежи
+                    </button>
+                </div>
+                <div>
+                    <button type="button" class="text-left btn btn-dark px-3 py-2 mb-2 f-16"><i
+                            class="fas fa-volume-up pr-2"></i>Звук</button>
+                </div>
+                <div>
+                    <button type="button" class="text-left btn btn-dark px-3 py-2 mb-2 f-16 d-xs-block"><i
+                            class="far fa-lightbulb pr-2"></i>Светло</button>
+                </div>
+                <div>
+                    <button type="button" class="text-left btn btn-dark px-3 py-2 mb-2 f-16"><i
+                            class="fas fa-headset pr-2"></i>Техничка
+                        Поддршка</button>
+                </div>
+                <div>
+                    <button type="button" class="text-left text-left btn btn-dark px-3 py-2 mb-2 f-16"><i
+                            class="fas fa-network-wired pr-2"></i>Помош при
+                        Организација</button>
+                </div>
+                <div>
+                    <button type="button" class="text-left btn btn-dark px-3 py-2 mb-2 f-16"><i
+                            class="fas fa-camera-retro pr-3"></i>Видео и Фотографија</button>
+                </div>
+            </div>
+    </div>
+
+    <div id="anja" class="container my-5">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 order-lg-2 order-md-1 order-xs-1">
+                <img class='' src="./assets/images/Anja.jpg" alt="" width="100%">
+            </div>
+            <div class="col-md-6 col-sm-12 text-left my-auto order-lg-1  order-md-2 order-sm-2">
+                <h3 class="pt-4 pb-4"><b>Event Host</b></h3>
+                <h5 class="pb-2">Ања Макеска</h5>
+                <h5 class="pb-2">anja@brainster.co</h5>
+                <h5 class="pb-2">+389 (0)70 233 414</h5>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="conteiner mx-5 px-5">
+            <div class="row">
+                <a class="logo d-xs-block d-md-none pb-5 pl-2 pt-4" href="HomePage.html">
+                    <img class="media-object " src="./assets/images/brainster_space_logo.svg" width="70px">
+                </a>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 links pb-5">
+                    <b>Корисни линкови</b>
+                    <li>
+                        <div class="popup f-10" onclick="popUpContactFunc()">Контакт
+                            <span class="popuptext myPopup2">Ања Макеска <br> anja@brainster.co <br> +389 (0)70 233
+                                414</span>
+                        </div>
+                    </li>
+                    <li><a href="https://www.wearelaika.com/">Отворени позиции</a></li>
+                    <li><a href="https://medium.com/wearelaika/brainster-space-the-
+    New-home-of-the-local-tech-community-
+    In-skopje-ffe97b564152">Галерија</a></li>
+                    <li><a href="Calendar.html">Календар</a></li>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 social pb-5">
+                    <p><b>Социјални мрежи</b></p>
+                    <div class=contact>
+                        <a href="facebook.com"><span style="padding-right: 8%; color: #4267B2;">
+                                <i class="fab fa-facebook fa-2x"></i>
+                            </span></a>
+                        <a href="linkedin.com"><span style="padding-right: 8%; color: #006097;">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </span></a>
+                        <a href="instagram.com"><span style="color: #CC0099;">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </span></a>
+                    </div>
+                </div>
+                <a class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 logo pt-3" href="HomePage.html">
+                    <img class="float-right d-none d-xl-block d-lg-block d-xs-none d-sm-none d-md-block"
+                        src="./assets/images/brainster_space_logo.svg" width="70px">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container-fluid text-center copyright pt-4 pb-2">
+        <p><b>COPYRIGHT@BrainsterSpace. All Rights Reserved</b></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/general.js"></script>
+
+</body>
+
+</html>
