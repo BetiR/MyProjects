@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 
 
-const Card = (props) => {
+export default function Card (props){
 	return (
         
         <Link to={`/CardDetails/${props.id}`}>
@@ -24,7 +24,6 @@ const Card = (props) => {
         </Link>
 	);
 }
-export default Card;
 
 
 

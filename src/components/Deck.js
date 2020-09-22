@@ -3,17 +3,14 @@ import card from "../cardContent";
 import Card from "./Card"
 
 export default class Deck extends Component {
-	constructor(props) {
-		super(props)
-		this.state = {
+	state = {
 			card: card,
 			filteredCard:'Бизнис, Маркетинг, Дизајн, Програмирање, Data Science, UX/UI',
 			switched: false,
 			showAll:true,
-		}
-	}
+			}
+	
 	toggleSwitch = () => {
-		
 		this.setState({ switched: !this.state.switched });
 	  };
 
