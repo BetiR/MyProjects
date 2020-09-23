@@ -7,6 +7,7 @@ body {
 
 /* ---Navbar--- */
 
+
 nav {
     display: flex;
     margin: 0;
@@ -105,7 +106,7 @@ button:focus {
     background-repeat: no-repeat;
     background-size: 80%;
     border-radius: 10px;
-    margin: 2% 5%;
+    margin: 2% 2%;
     text-align: center;
     padding: 5%;
 } 
@@ -131,6 +132,7 @@ button:focus {
     background-color: #ffffff;
     color: #5E5AF5;
 }
+
 
 #email {
     width: 30%;
@@ -402,6 +404,11 @@ margin-left: 8.5%;
     width: 30vw;
  }
 
+ .cardOn .card {
+    width: 70vw;
+    
+}
+
  .Details .card {
     width: 85vw;
   }
@@ -423,7 +430,13 @@ margin-left: 8.5%;
         text-align: right;
         background-color: white;
         width: min-content;
-        margin-left: 55vw;
+        margin-left: 54vw;
+    }
+
+    .form button {
+        background-color: #807cf5;
+        border-radius: 5px;
+        padding: 2%;
     }
 
     .card {
@@ -439,6 +452,13 @@ margin-left: 8.5%;
        margin-bottom: 2%;
        padding: 2%;       
    }
+
+   .Details .card {
+    max-width: 75vw;
+}
+.card-right {
+    max-width: 75vw;
+}
 
    .FilterTitle h3 {
     margin-right: 0px;
