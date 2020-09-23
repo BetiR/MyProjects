@@ -9,7 +9,7 @@ export default function Modal (props) {
         <button id="closeBtn" onClick={props.handleClose}><img src={require(`../images/closeBtn.png`)}/> </button>        
                 <h2>Пријави се</h2>
                 <label>Име и презиме</label>
-                <input type="наме" className="input" value="Име и презиме"></input>
+                <input type="name" className="input" value="Име и презиме"></input>
                 <br/> <br/>
                 <label>e-mail</label>
                 <input type="email" className="input" value="Email Address"></input>
