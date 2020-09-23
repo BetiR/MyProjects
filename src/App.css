@@ -4,9 +4,7 @@ body {
     background-color: #e7e7e7;
 }
 
-
 /* ---Navbar--- */
-
 
 nav {
     display: flex;
@@ -48,7 +46,10 @@ nav li a:hover {
     display:none;
 }
 
+
 /*----------DROPDOWN----------*/
+
+
 #dropdown {
     position: fixed;
     top: 0;
@@ -68,12 +69,11 @@ nav li a:hover {
     left:1%;
   }
 
-  #dropdown ul li {
-display: block;
-text-align: left;
-padding: 5%;
+#dropdown ul li {
+    display: block;
+    text-align: left;
+    padding: 5%;
   }
-
 
 button {
     width: 130px;
@@ -97,7 +97,9 @@ button:focus {
     color: black;
 }
 
+
 /* -----Banner---- */
+
 
 .banner {
     background-color: #5E5AF5;
@@ -133,7 +135,6 @@ button:focus {
     color: #5E5AF5;
 }
 
-
 #email {
     width: 30%;
     background-color: #807cf5;
@@ -159,7 +160,7 @@ button:focus {
 }
 
 .CardDeck {
-margin-left: 8.5%;
+    margin-left: 8.5%;
 }
 
 .cardOn .card {
@@ -234,8 +235,11 @@ margin-left: 8.5%;
     margin-top: -2px;
     margin-right: 50px;
 }
+
   
 /*____switch____*/
+
+
 .react-switch-checkbox {
     height: 0;
     width: 0;
@@ -302,20 +306,20 @@ margin-left: 8.5%;
     float: right;
 }
 
-    .Details .card-right button {
+.Details .card-right button {
     background-color: #807cf562;
     color: black;
     border-radius: 5px;
     padding: 2%;
     width: 100%;
     margin: 2%;
-    }
+}
 
-    .Details .card-right button span {
+.Details .card-right button span {
     float:right;
     margin-right: 8%;
     margin-left: 60%;
-    }
+}
 
 /*---------------MODAL----------------*/
 
@@ -328,101 +332,96 @@ margin-left: 8.5%;
     background: rgba(0, 0, 0, 0.6);
   }
   
-  .modal-main {
+.modal-main {
     position:fixed;
     background: white;
     padding: 2%;
     width: 40%;
     height: auto;
-    top:50%;
+    top:20%;
     left:50%;
     transform: translate(-50%,-50%);
-  }
+}
 
-  .modal label {
-      margin-right:2%;
-      margin-bottom: 20%;
-      color: #5E5AF5;
-  }
+.modal label {
+    margin-right:2%;
+    margin-bottom: 20%;
+    color: #5E5AF5;
+}
 
-  #closeBtn {
+#closeBtn {
     float:right;
     background-color: white;
     width: min-content;
     margin:0;
     padding: 0%;
-  }
-  
-  .modal h2 {
-      color: #5E5AF5;
-  }
+}
 
-  .display-block {
+.modal h2 {
+    color: #5E5AF5;
+}
+
+.display-block {
     display: block;
-  }
-  
-  .display-none {
+}
+
+.display-none {
     display: none;
-  }
+}
 
-  #root > div > div.banner > div.modal.display-block > section > input {
-      border:1px solid #5E5AF5
-  }
-
-
+#root > div > div.banner > div.modal.display-block > section > input {
+    border:1px solid #5E5AF5
+}
 
 
 
 @media screen and (max-width: 1024px) {
-.Details {
-    margin-right: 150vw;
-}
-.Details .card {
-  width: 86vw;
-}
-
-.Details .card-right{
+    .Details {
+        margin-right: 150vw;
+    }
+    .Details .card {
     width: 86vw;
-    float: none;
-}
+    }
 
-.Details .card-right button {
-    margin-left: auto;
-    margin-right: auto;
-}
+    .Details .card-right{
+        width: 86vw;
+        float: none;
+    }
 
+    .Details .card-right button {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
 @media screen and (max-width: 768px) {
- .card {
-     width: 30vw;
-     padding: 5%;
-     margin-left:0;
- }
- .card-header img{
-    width: 30vw;
- }
+    .card {
+        width: 30vw;
+        padding: 5%;
+        margin-left:0;
+    }
+    .card-header img{
+        width: 30vw;
+    }
 
- .cardOn .card {
-    width: 70vw;
+    .cardOn .card {
+        width: 70vw;
+    }
+
+    .Details .card {
+        width: 85vw;
+    }
     
+    .Details .card-right{
+        width: 85vw;
+    }
 }
 
- .Details .card {
-    width: 85vw;
-  }
-  
-  .Details .card-right{
-      width: 85vw;
-  }
 
-  }
-
-
-  @media screen and (max-width: 425px) {
+@media screen and (max-width: 425px) {
     .collapsibleNav{
-    display:none;
+        display:none;
     }
 
     #burgerMenu{
@@ -446,7 +445,7 @@ margin-left: 8.5%;
         width: 45vw;
     }    
 
-   #email {
+    #email {
        display: block;
        width:75vw;
        margin-bottom: 2%;
@@ -454,14 +453,18 @@ margin-left: 8.5%;
    }
 
    .Details .card {
-    max-width: 75vw;
-}
-.card-right {
-    max-width: 75vw;
-}
+        max-width: 75vw;
+    }
+    .card-right {
+        max-width: 75vw;
+    }
 
    .FilterTitle h3 {
     margin-right: 0px;
-}
+    }
+
+    .modal-main {
+        width: 80vw;
+    }
 
   }
