@@ -6,7 +6,7 @@ export default function Modal (props) {
       <div className={props.show ? "modal display-block" : "modal display-none"}>
       
         <section className="modal-main">
-        <button id="closeBtn" onClick={props.handleClose}><img src={require(`../images/closeBtn.png`)}/> </button>        
+        <button id="closeBtn" onClick={props.handleClose}><img src={require(`../images/closeBtn.png`)} alt="img"/> </button>        
                 <h2>Пријави се</h2>
                 <label>Име и презиме</label>
                 <input type="name" className="input" value="Име и презиме"></input>

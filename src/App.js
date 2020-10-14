@@ -9,7 +9,6 @@ import Deck from './components/Deck';
 import CardDetails from './components/CardDetails';
 
 
-
 export default function App() {
   return (
     <Router>
@@ -19,7 +18,7 @@ export default function App() {
           <Banner/>
             <Switch>
               <Route path='/' exact component={Deck} />
-//            <Route path='/CardDetails/:id' component={CardDetails} />
+              <Route path='/CardDetails/:id' component={CardDetails} />
           </Switch>
         </div>
       </Scrolltotop>

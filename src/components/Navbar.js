@@ -37,7 +37,7 @@ export default class Navbar extends Component {
             </ul>
                 <Modal show={this.state.show} handleClose={this.hideModal}/>
 
-                <button id="burgerMenu" type="button" onClick={this.showDropdown}><img src={require(`../images/burgerMenu.png`)}/></button>
+                <button id="burgerMenu" type="button" onClick={this.showDropdown}><img src={require(`../images/burgerMenu.png`)} alt="img"/></button>
                 <DropDownMenu show={this.state.dropdown} hideDropdown={this.hideDropdown}/>
           </nav>
     );

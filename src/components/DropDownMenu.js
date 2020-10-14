@@ -8,7 +8,7 @@ export default function Modal (props) {
         <section id="dropdown">
             
         <ul>
-        <button id="closeBtn" onClick={props.hideDropdown}><img src={require(`../images/closeBtn.png`)}/> </button>    
+        <button id="closeBtn" onClick={props.hideDropdown}><img src={require(`../images/closeBtn.png`)} alt="img"/> </button>    
         <li><a href="https://brainster.co/">Академии</a></li>
         <li><a href="https://brainster.co/">Вебинари</a></li>
         <li><a href="https://brainster.co/">Тест за кариера</a></li>
