@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Modal (props) {
+export default function DropDownMenu (props) {
 
     return (
       <div className={props.show ? "modal display-block" : "modal display-none"}>
