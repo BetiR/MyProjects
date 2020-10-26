@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Modal from './Modal';
 
 export default function DropDownMenu (props) {
 
     return (
-      <div className={props.show ? "modal display-block" : "modal display-none"}>
+      <div className={props.showF ? "modal display-block" : "modal display-none"}>
       
         <section id="dropdown">
             
@@ -16,6 +17,7 @@ export default function DropDownMenu (props) {
         <li><button type="button" onClick={props.showModal}>Пријави се</button></li>
       </ul>
         </section>
+        <Modal/>
       </div>
     );
   };

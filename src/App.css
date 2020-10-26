@@ -260,6 +260,7 @@ button:focus {
     border-radius: 100px;
     position: relative;
     transition: background-color .2s;
+    z-index: -1;
   }
   
   .react-switch-label .react-switch-button {
@@ -273,11 +274,13 @@ button:focus {
     transition: 0.2s;
     background: #fff;
     box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+    z-index: -1;
   }
   
   .react-switch-checkbox:checked + .react-switch-label .react-switch-button {
     left: calc(100% - 2px);
     transform: translateX(-100%);
+    z-index: -1;
   }
   
   .react-switch-label:active .react-switch-button {
@@ -379,10 +382,6 @@ button:focus {
     border:1px solid #5E5AF5
 }
 
-.footer {
-    display: block;
-}
-
 
 @media screen and (max-width: 1024px) {
     .Details {
@@ -428,7 +427,7 @@ button:focus {
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
     .collapsibleNav{
         display:none;
     }

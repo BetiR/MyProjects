@@ -8,7 +8,8 @@ export default class Navbar extends Component {
   
 
   showModal = () => {
-    this.setState({ show: true });
+    this.setState({ show: true,
+                    dropdown:false });
   };
 
   hideModal = () => {
@@ -36,9 +37,8 @@ export default class Navbar extends Component {
               <li><button type="button" onClick={this.showModal}>Пријави се</button></li>
             </ul>
                 <Modal show={this.state.show} handleClose={this.hideModal}/>
-
                 <button id="burgerMenu" type="button" onClick={this.showDropdown}><img src={require(`../images/burgerMenu.png`)} alt="img"/></button>
-                <DropDownMenu show={this.state.dropdown} hideDropdown={this.hideDropdown}/>
+                <DropDownMenu showF={this.state.dropdown} hideDropdown={this.hideDropdown} showModal={this.showModal} hideModal={this.hideModal} />
           </nav>
     );
   }
