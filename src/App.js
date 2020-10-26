@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar.js";
 import Banner from './components/Banner';
 import Deck from './components/Deck';
 import CardDetails from './components/CardDetails';
+import Footer from './components/Footer';
 
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
               <Route path='/' exact component={Deck} />
               <Route path='/CardDetails/:id' component={CardDetails} />
           </Switch>
+          <Footer/>
         </div>
       </Scrolltotop>
     </Router>
