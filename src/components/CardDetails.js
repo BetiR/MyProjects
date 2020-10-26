@@ -23,8 +23,10 @@ export default class Details extends Component {
                             <a style={{ textDecoration: 'none', color: 'white' }} href={el.link}>
                             <div key={el.id} id={el.id} className="card">
                                 <div className="card-body">
+                                <button>{el.date}</button>
                                     <div className="card-title">
                                         <h3><b>{el.subtitle}</b></h3>
+                                        
                                     </div>
                                     <div className="card-text">
                                         <p>{el.context}</p>

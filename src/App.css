@@ -242,6 +242,10 @@ button:focus {
     margin-right: 50px;
 }
 
+.Details .card button {
+ float: right;
+ margin-top: 3%;
+}
   
 /*____switch____*/
 
@@ -387,6 +391,10 @@ button:focus {
     width: 100%;
 }
 
+.footer h3 {
+    padding: 0% 2%;
+}
+
 .footer span {
     color: red;
 }
@@ -436,6 +444,12 @@ button:focus {
 
 
 @media screen and (max-width: 500px) {
+
+    
+.Details .card button {
+    float: none;
+   }
+    
     .collapsibleNav{
         display:none;
     }
