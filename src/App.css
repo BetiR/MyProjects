@@ -110,7 +110,7 @@ button:focus {
 .banner {
     background-color: #5E5AF5;
     background-image: url("./images/banner.png");
-    background-position:left;
+    background-position:center;
     background-repeat: no-repeat;
     background-size: 80%;
     border-radius: 10px;
