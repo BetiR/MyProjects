@@ -99,6 +99,7 @@ export default class Deck extends Component {
 								title={element.title}
 								text={element.text}
 								lekcii={element.lekcii}
+								stars={element.stars}
 								filter={this.state.filteredCard}
 							/>
 						)

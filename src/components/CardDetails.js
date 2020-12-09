@@ -6,6 +6,11 @@ export default class Details extends Component {
     render() {
         let selected = card.filter(el => el.id === parseInt(this.props.match.params.id))[0];
 
+        let stars =[]
+        for (var i = 0; i < card.stars; i++) {
+			stars.push(<i className="fa fa-star"></i>);
+		}
+
         return (
             <div className='Details'>
                             <div className="card-right">
@@ -31,6 +36,11 @@ export default class Details extends Component {
                                     <div className="card-text">
                                         <p>{el.context}</p>
                                     </div>
+                                    <div className='stars'>
+                                    {el.stars}
+                                    <span>    &#x2764;</span>
+                                    </div>
+                                    
                                 </div>         
                             </div>
                             </a>

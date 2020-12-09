@@ -432,6 +432,7 @@ button:focus {
     color: #fff;
     text-align: center;
     width: 100%;
+    padding-top: 2%;
 }
 
 .footer h3 {
@@ -439,6 +440,25 @@ button:focus {
 }
 
 .footer span {
+    color: red;
+}
+
+.footer a{
+    padding: 1%;
+    cursor: pointer;
+}
+
+.footer a :hover {
+    transform: scale(1.08);
+}
+
+.stars {
+    float: right;
+    padding-bottom: 1%;
+    padding-right: 1%;
+}
+
+.stars span {
     color: red;
 }
 
