@@ -10,7 +10,7 @@ import CardDetails from './components/CardDetails';
 import Footer from './components/Footer';
 
 
-export default function App() {
+export default function App(props) {
   return (
     <Router>
       <Scrolltotop>

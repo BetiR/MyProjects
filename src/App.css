@@ -12,11 +12,11 @@ nav {
     padding: 0 5%;
     font-weight: bold;
     background-color: #ffffff;
-    box-shadow: 0px 0px 12px #5E5AF5;
+    box-shadow: 0px 0px 12px #0000008c;
  }
 
 .logo {
-    width: 50px;
+    width: 65px;
     margin-top:10px;
 }
 
@@ -63,16 +63,25 @@ nav li a:hover {
     position:fixed;
     background: white;
     padding: 2%;
-    width: 80%;
+    width: 75%;
     height: auto;
-    top:1%;
-    left:1%;
+    border-radius: 70px;
+    margin-top: -18%;
+    margin-left: -20%;
+    padding-top: 20%;
+    padding-left: 20%;
   }
 
 #dropdown ul li {
     display: block;
     text-align: left;
     padding: 5%;
+    clear: both;
+  }
+
+#dropdown .logo {
+    margin: 3% 0% 8% 8%;
+    float: left;
   }
 
 button {
@@ -81,7 +90,7 @@ button {
     border: none;
     color: white;
     padding:1%;
-    border-radius: 50px;
+    border-radius: 30px;
     cursor: pointer;
     font-weight: bold;
     margin:1%;
@@ -89,12 +98,12 @@ button {
 
 button:hover {
     opacity: 0.8;
+    border-radius: 18px;
 }
 
 button:focus {
     outline: none;
 }
-
 
 .white {
     outline: #5E5AF5;
@@ -106,18 +115,23 @@ button:focus {
 
 /* -----Banner---- */
 
-
 .banner {
     background-color: #5E5AF5;
     background-image: url("./images/banner.png");
     background-position:center;
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: cover;
     border-radius: 10px;
     margin: 2% 2%;
     text-align: center;
     padding: 5%;
 } 
+
+.bannercontent{
+    background-color: #fcfcfc5d;
+    border-radius: 10px;    
+    padding: 1% 0%;
+}
 
 .banner h2 {
     line-height: 170%;
@@ -143,13 +157,16 @@ button:focus {
 
 #email {
     width: 30%;
-    background-color: #807cf5;
+    background-color: #5E5AF5;
+    border-radius: 50px;
     color: #ffffff;
+    margin-left: auto;    
+    margin-right: auto; 
 }
 
 #email:hover {
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.562);
-    color: black;
+    background-color: #ffffff80;
+    color: #5E5AF5;
 }
 
 .banner input {
@@ -165,29 +182,28 @@ button:focus {
     text-align: center;
 }
 
-.CardDeck {
-    margin-left: 8.5%;
-}
-
 .cardOn .card {
     margin:2%;
     padding: 2%;
     width: 20vw;
     float: left;
-    border: 2px #807cf588 solid;
     border-radius: 15px;
+    border: 2px solid rgba(128, 128, 128, 0.288);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
     background-color: white;
     cursor: pointer;
     text-align: center;
 }
 
+
 .cardOn .card .card-header img{
-    width: 15vw;
+    width: 80%;
 }
 
 .cardOn .card:hover {
-    transform: scale(1.01);
-    box-shadow: 2px 2px 8px #5f5af583;
+    transform: scale(1.1);
+    transition: 0.7s;
+    box-shadow: 4px 10px 18px rgba(0, 0, 0, 0.5);
 }
 
 .cardOff .card {
@@ -196,7 +212,7 @@ button:focus {
     border: 1px solid #5E5AF5;
     border-radius:15px;
     padding:2px;
-    margin:1vw 3vw;
+    margin: 3% auto;
     cursor: pointer;
     background-color: white;
 }
@@ -243,8 +259,8 @@ button:focus {
 }
 
 .Details .card button {
- float: right;
- margin-top: 3%;
+    float: right;
+    margin-top: 3%;
 }
   
 /*____switch____*/
@@ -339,36 +355,67 @@ button:focus {
     left: 0;
     width:100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    text-align: left;
   }
-  
+ 
+ 
+
 .modal-main {
     position:fixed;
-    background: white;
-    padding: 2%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1%;
     width: 40%;
     height: auto;
     top:20%;
     left:50%;
     transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 2% 2% 3% 4%;
+    margin-top: 12%;
+    box-shadow:4px 8px 8px 8px rgba(0, 0, 0, 0.3);
+  }
+
+.modal-main label {
+    padding-right:2%;
+    padding-bottom: 10%;
+    color: #5E5AF5;
+    font-weight: bold;
 }
 
-.modal label {
-    margin-right:2%;
-    margin-bottom: 20%;
-    color: #5E5AF5;
+.modal input {
+    border: 1px solid rgba(0, 0, 0, 0.521);
+    border-radius: 10px;
+    font-weight: normal;
+    font-style: italic;
+    padding: 2%;
 }
+
+.modal button {
+    margin:5% 0%;    
+}
+
+/* .modal .display-none {
+    transform: translate3d(-100vw, 0, 0);
+}
+
+.modal .display-block {
+    transform: translate3d(0vw, 0, 0);
+    overflow: hidden;
+} */
 
 #closeBtn {
     float:right;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.137);
     width: min-content;
-    margin:0;
+    margin:2% 3%;
     padding: 0%;
 }
 
 .modal h2 {
     color: #5E5AF5;
+    padding-bottom: 5%;
 }
 
 .display-block {
@@ -377,10 +424,6 @@ button:focus {
 
 .display-none {
     display: none;
-}
-
-#root > div > div.banner > div.modal.display-block > section > input {
-    border:1px solid #5E5AF5
 }
 
 .footer {
@@ -399,12 +442,19 @@ button:focus {
     color: red;
 }
 
+
+.CardDeck {
+   margin-left: 7.8%;
+  }
+
 @media screen and (max-width: 1024px) {
+
     .Details {
         margin-right: 150vw;
     }
+
     .Details .card {
-    width: 86vw;
+    width: 10vw;
     }
 
     .Details .card-right{
@@ -416,21 +466,43 @@ button:focus {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .CardDeck {
+        margin-left: 20%;
+    }
 }
 
 
 @media screen and (max-width: 768px) {
+    #burgerMenu {
+        display:block;
+        background-color: white;
+        margin-left: 75%;
+    }
+
+    .FilterTitle {
+        margin-top: 2%;
+    }
+
+    .collapsibleNav {
+        display: none;
+    }
+
     .card {
         width: 30vw;
         padding: 5%;
-        margin-left:0;
     }
-    .card-header img{
-        width: 30vw;
+
+    .CardDeck {
+        margin-left: 4%;
+      }
+
+    .cardOff {
+        margin-left: 11%;
     }
 
     .cardOn .card {
-        width: 70vw;
+        width: 38vw;
     }
 
     .Details .card {
@@ -440,14 +512,22 @@ button:focus {
     .Details .card-right{
         width: 85vw;
     }
+
+    .cardOff .card-header img{
+        display: none;
+    }
+
+    .cardOff .card {
+        margin-left: -0.4%;
+    }
 }
 
 
 @media screen and (max-width: 500px) {
 
     
-.Details .card button {
-    float: none;
+    .Details .card button {
+        float: none;
    }
     
     .collapsibleNav{
@@ -463,28 +543,35 @@ button:focus {
         text-align: right;
         background-color: white;
         width: min-content;
-        margin-left: 54vw;
+        margin-left: 60%;
     }
 
-    .form button {
-        background-color: #807cf5;
-        border-radius: 5px;
-        padding: 2%;
+    .logo {
+        margin-left: -25%;
     }
 
     .card {
         width: 75vw;
     }
+
     .card-header img{
-        width: 45vw;
+        width: 5vw;
     }    
 
     #email {
        display: block;
        width:75vw;
        margin-bottom: 2%;
-       padding: 2%;       
+       padding: 2%;    
    }
+
+   .cardOn .card {
+    width: 70vw;
+}
+
+    .CardDeck {
+        margin-left: 10vw;
+    }
 
    .Details .card {
         max-width: 75vw;
@@ -498,6 +585,7 @@ button:focus {
     }
 
     .modal-main {
+        margin-top: 44%;
         width: 80vw;
     }
 
